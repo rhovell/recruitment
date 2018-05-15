@@ -274,7 +274,23 @@ footer styling
 */
 footer {
   width: 1000px;
-  max-width: 100%;
+  max-width: 90%;
   margin: 1em;
   margin-bottom: 0;
+  text-align: center;
+}
+hr {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 25, 105, 0.7), rgba(0, 0, 0, 0));
+    border: 0;
+    height: 2px;
+}
+.logo {
+  width: 3em;
+  vertical-align: middle;
+}
+.fb.logo {
+  width: 2em;
+}
+.rwd.logo {
+  width: 2em;
 }
