@@ -185,6 +185,22 @@ a.header-link {
 .quote {
   /* padding: 0 5px 0 10px; */
 }
+/* points (reasons) to choose avon */
+.points {
+  margin-top: 1em;
+}
+.points-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.8em;
+  text-align: left;
+}
+.point img {
+  width: 40%;
+}
+.points-text img {
+  width: 50%;
+}
 /*
 footer styling
 */
