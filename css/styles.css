@@ -206,6 +206,8 @@ a.header-link {
   border: 1px solid rgba(180, 180, 171, 1);
   text-align: left;
   padding: 0.5em;
+  box-shadow: 2px 2px 2px 2px rgba(193, 193, 193, 0.5);
+
 }
 .sign-up-form input {
   float: right;
@@ -231,6 +233,41 @@ a.header-link {
   box-shadow: 2px 2px 2px 2px rgba(193, 193, 193, 0.5);
   /* margin: auto; */
   cursor: pointer;
+}
+.reps-info {
+  margin-top: 1em;
+}
+.rep-text {
+  display: grid;
+  grid-template-columns: auto;
+  flex-wrap: wrap;
+}
+.reps-info-text {
+  background-color: rgba(255, 25, 105, 0.7);
+  margin-bottom: 0.5em;
+}
+.reps-list {
+  padding: 0 5% 0 5%;
+  list-style: none;
+}
+.rep-image {
+  width: 5em;
+  vertical-align: middle;
+  float: left;
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+}
+.reps-list li {
+  padding-bottom: 1em;
+}
+.rep-quote {
+  /* margin/padding: top right bottom left; */
+  padding: 0 0 10px 10px;
+  /* width: 60%; */
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-size: 0.8em;
 }
 /*
 footer styling
