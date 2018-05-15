@@ -55,6 +55,6 @@ function showSlides(n) {
 delayedHeroScroll = setTimeout(function playSlides(){
   console.log("playSlides called");
 plusSlides(n);
-},10000)
+},8000)
 
 }
