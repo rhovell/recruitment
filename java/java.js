@@ -1,6 +1,5 @@
 // menu button jscript
 (function openDropDown(){
-  // debugger
   // console.log("function called");
   let menu = document.querySelector("#menuButton");
   let menuList = document.querySelector("#dropDownMenu");
@@ -24,3 +23,38 @@
   }
   }
 })();
+
+
+// javascript for hero heroBannervar
+slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("hero-banner-image");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+
+delayedHeroScroll = setTimeout(function playSlides(){
+  console.log("playSlides called");
+plusSlides(n);
+},10000)
+
+}
