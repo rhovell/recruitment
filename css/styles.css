@@ -50,6 +50,9 @@ a.header-link {
   text-align: center;
 
 }
+.header-image {
+  width: 70%;
+}
 .nav.menu-bar {
   width: 100%;
   height: 35px;
